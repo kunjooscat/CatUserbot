@@ -24,34 +24,34 @@ async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
         query = event.pattern_match.group(1)
-        await event.edit("wi8..! I am finding your song....")
+        await event.edit("I am Sing A Song 😜 ")
     elif reply.message:
         query = reply.message
-        await event.edit("wi8..! I am finding your song....")
+        await event.edit("I am Sing A Song 😜 ")
     else:
-    	await event.edit("`What I am Supposed to find `")
+    	await event.edit("`What I am Supposed to Sing ? 🤔 `")
     	return
     
     await catmusic(str(query),"320k")
     l = glob.glob("*.mp3")
     if l:
-        await event.edit("yeah..! i found something wi8..🥰")
+        await event.edit("Beware..! It's Almost Here..! 🥰")
     else:
-        await event.edit(f"Sorry..! i can't find anything with `{query}`")
+        await event.edit(f"Sorry..! i can't sing anything with `{query}`")
     loa = l[0]    
     await borg.send_file(
                 event.chat_id,
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=f"`Song`: {query}\n`Uploaded by`: {DEFAULTUSER}",
+                caption=(" 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : ᒍIᑎᑎ🧞‍♂️ "),
                 reply_to=reply_to_id
             )
     await event.delete()
     os.system("rm -rf *.mp3")
     subprocess.check_output("rm -rf *.mp3",shell=True)		      
     
-@borg.on(admin_cmd(pattern="videosong(?: |$)(.*)"))
+@borg.on(admin_cmd(pattern="vsong(?: |$)(.*)"))
 async def _(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
@@ -88,7 +88,7 @@ async def _(event):
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=f"`Song`: {query}\n`Uploaded by`: {DEFAULTUSER}",
+                caption=("𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : ᒍIᑎᑎ🧞‍♂️"),
                 supports_streaming=True,
                 reply_to=reply_to_id,
                 attributes=[DocumentAttributeVideo(
