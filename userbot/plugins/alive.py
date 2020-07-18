@@ -24,8 +24,7 @@ async def amireallyalive(alive):
         reply_to_id = await alive.get_reply_message()
 
     if CAT_IMG:
-         cat_caption  = f"🚴‍♂️**MY CAT IS PERFECTLY OK**\n\n"
-         cat_caption  = f"**Myaaawoooohhh😜**\n\n"
+         cat_caption  = f"**MYAAAAAAWWOOOOHH😜**\n\n"
          cat_caption += f"**Database Status: Databases Functioning Normally!**\n"   
          cat_caption += f"🔴`Telethon Version:` **{version.__version__}**\n"
          cat_caption += f"🔴`Python Version:` **{python_version()}**\n"
@@ -36,8 +35,7 @@ async def amireallyalive(alive):
          await borg.send_file(alive.chat_id, CAT_IMG, caption=cat_caption)
          await alive.delete()
     else:
-        await alive.edit("🚴‍♂️**MY CAT IS PERFECTLY OK**\n\n"
-                         "**Myaaawoooohhh😜**\n\n"
+        await alive.edit("🚴‍♂️**MYAAAAAAWWOOOOHH😜**\n\n"
                          "**Database Status: Databases Functioning Normally!**\n"
                          f"🔴`Telethon Version:` **{version.__version__}**\n"
                          f"🔴`Python Version:` **{python_version()}**\n"
