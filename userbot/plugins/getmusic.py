@@ -44,7 +44,7 @@ async def _(event):
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=(" 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : ᒍIᑎᑎ🧞‍♂️ "),
+                caption=(" 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : cat "),
                 reply_to=reply_to_id
             )
     await event.delete()
@@ -88,7 +88,7 @@ async def _(event):
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=("𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : ᒍIᑎᑎ🧞‍♂️"),
+                caption=("𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚋𝚢 : cat"),
                 supports_streaming=True,
                 reply_to=reply_to_id,
                 attributes=[DocumentAttributeVideo(
